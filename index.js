@@ -57,5 +57,5 @@ let info = prompt('Какую информацию хотите узнать о 
 alert(user[info]); // 9.4
 
 let userName =  prompt('Введите ваше имя');
-alert(userName); // 10
+alert('Привет, ' + userName + '!'); // 10
 
