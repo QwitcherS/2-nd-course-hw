@@ -4,10 +4,10 @@ a = 20;
 alert(a); // Задание 1
 
 let b = 2007;
-alert(b); // задание 2
+alert('Год выпуска первого Iphone - ' + b); // задание 2
 
 let creatorJavaScript = 'Brendan Eich';
-alert(creatorJavaScript); //Задание 3
+alert('Создатель языка JavaScript - ' + creatorJavaScript); //Задание 3
 
 let c = 10;
 let d = 2;
@@ -35,13 +35,27 @@ num *= 7;
 num /= 3;
 ++num;
 --num;
-alert(num); // задание 7
+alert('Результат вычислений по заданию №7 - ' + num); // задание 7
 
 let age = prompt('Сколько вам лет?');
 alert(age); // задание 8
 
 let user = {
-  name:'Bob';
-  age: 18;
-  isAdmin: true;
-};
+  name:'Bob',
+  age: 18,
+  isAdmin: true
+}; // задание 9.0
+
+user.sityOfResidence = 'Poland'; // 9.1
+
+user.age = 27; // 9.2
+
+delete user.sityOfResidence; // 9.3
+
+let info = prompt('Какую информацию хотите узнать о пользователе?', 'name');
+
+alert(user[info]); // 9.4
+
+let userName =  prompt('Введите ваше имя');
+alert(userName); // 10
+
