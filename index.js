@@ -3,10 +3,10 @@ alert(a);
 a = 20;
 alert(a); // Задание 1
 
-let b = 2007;
+const b = 2007;
 alert('Год выпуска первого Iphone - ' + b); // задание 2
 
-let creatorJavaScript = 'Brendan Eich';
+const creatorJavaScript = 'Brendan Eich';
 alert('Создатель языка JavaScript - ' + creatorJavaScript); //Задание 3
 
 let c = 10;
