@@ -78,13 +78,38 @@ switch (userAnswer) {
 // Задание 7
 
 let number = Number(prompt("Пожалуйста, введите любое число"));
+let num = number % 2;
 if (number === NaN) {
   console.log("Это не число");
+} else if (num === 0) {
+  alert("Число является четным");
 } else {
-  num = number / 2;
+  alert("Число является нечетным");
 }
-if (num = 0) {
-  console.log("Число является четным");
+
+// Задание 8 и 9
+
+let clientOS = Number(
+  prompt("Укажите вашу операционную систему: 0 - iOS, 1 - Android")
+);
+if (clientOS === 0) {
+  let clientDeviceYear = Number(
+    prompt("Введите год выпуска вашего устройства на iOS")
+  );
+  if (clientDeviceYear >= 2015) {
+    console.log("Установите версию приложения для iOS по ссылке");
+  } else {
+    console.log("Установите облегченную версию приложения для iOS по ссылке");
+  }
 } else {
-  console.log("Число является нечетным");
+  let clientDeviceYear = Number(
+    prompt("Введите год выпуска вашего устройства на Android")
+  );
+  if (clientDeviceYear >= 2015) {
+    console.log("Установите версию приложения для Android по ссылке");
+  } else {
+    console.log(
+      "Установите облегченную версию приложения для Android по ссылке"
+    );
+  }
 }
