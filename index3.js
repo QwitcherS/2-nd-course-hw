@@ -13,14 +13,14 @@ if (password === userPassword) {
 // Задание 2
 
 let c = -3;
-c > 0 && c < 10 ? console.log("Верно") : console.log("Неверно");
+console.log(c > 0 && c < 10 ? "Верно" : "Неверно");
 
 // Задание 3
 
 let d = 40;
 let e = 120;
 
-d > 100 || e > 100 ? console.log("Верно") : console.log("Неверно");
+console.log(d > 100 || e > 100 ? "Верно" : "Неверно");
 
 // Задание 4
 
