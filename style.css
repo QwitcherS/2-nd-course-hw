@@ -12,15 +12,7 @@ body {
   padding-right: 120px;
 }
 
-.header {
-  font-family: "Montserrat", sans-serif;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) -7.35%, #000915 100%), url(mainbg.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 1024px;
-}
-.header__text {
+.text__header {
   margin-top: 32px;
   width: 481px;
   font-style: normal;
@@ -29,7 +21,25 @@ body {
   line-height: 32px;
   color: #ffffff;
 }
-.header__btn {
+.text__item {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #ffffff;
+  margin: 32px;
+}
+.text__seasons {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
+
+.btn__header {
   width: 234px;
   height: 48px;
   margin-top: 44px;
@@ -40,12 +50,40 @@ body {
   font-size: 18px;
   line-height: 22px;
   color: #ffffff;
+  transition: all 0.3s;
 }
-.header__text {
-  width: 343px;
+.btn__header:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 5px #ccc;
+}
+.btn__seasons {
+  width: 234px;
+  height: 48px;
+  margin-top: 44px;
+  background: #9c0332;
+  border-radius: 30px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+  transition: all 0.3s;
+}
+.btn__seasons:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 5px #ccc;
 }
 
-.heading {
+.header {
+  font-family: "Montserrat", sans-serif;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) -7.35%, #000915 100%), url(mainbg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 1024px;
+}
+
+.heading__top {
   padding-top: 217px;
   width: 789px;
   font-style: normal;
@@ -55,29 +93,28 @@ body {
   display: flex;
   color: #ffffff;
 }
+.heading__seasons {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 59px;
+  color: #ffffff;
+}
 
-.footer {
+.game {
   height: 556px;
 }
-.footer__content {
+.game__content {
   display: flex;
   gap: 32px;
   padding-bottom: 128px;
+  padding-top: 128px;
 }
-.footer__item {
+.game__item {
   width: 379px;
   height: 300px;
   display: flex;
   align-items: flex-end;
-}
-
-.item__text {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 32px;
-  color: #ffffff;
-  margin: 32px;
 }
 
 .game1 {
@@ -117,6 +154,24 @@ body {
 .game3:hover {
   transform: scale(1.05);
   box-shadow: 0 0 5px #ccc;
+}
+
+.seasons {
+  margin-top: 234px;
+}
+.seasons__content {
+  height: 800px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 120px;
+}
+
+.content__left {
+  width: 584px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }
 
 @media (max-width: 375px) {
