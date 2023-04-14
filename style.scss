@@ -1,0 +1,250 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #000915;
+}
+
+.center {
+  padding-left: calc(50% - 700px);
+  padding-right: calc(50% - 700px);
+}
+
+.text {
+  &__header {
+    margin-top: 32px;
+    width: 481px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 32px;
+    color: #ffffff;
+  }
+  &__item {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: #ffffff;
+    margin: 32px;
+  }
+  &__seasons {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+  }
+  &__word {
+    width: 588px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+  }
+}
+
+.btn {
+  &__header {
+    width: 234px;
+    height: 48px;
+    margin-top: 44px;
+    background: #9c0332;
+    border-radius: 30px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #ffffff;
+    transition: all 0.3s;
+    &:hover {
+      background: #eb443f;
+      border-radius: 30px;
+      transform: scale(1.05);
+      box-shadow: 0 0 5px #ccc;
+    }
+  }
+  &__seasons {
+    width: 234px;
+    height: 48px;
+    margin-top: 44px;
+    background: #9c0332;
+    border-radius: 30px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #ffffff;
+    transition: all 0.3s;
+    &:hover {
+      background: #eb443f;
+      border-radius: 30px;
+      transform: scale(1.05);
+      box-shadow: 0 0 5px #ccc;
+    }
+  }
+  &__word {
+    width: 234px;
+    height: 48px;
+    margin-top: 44px;
+    background: #9c0332;
+    border-radius: 30px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #ffffff;
+    transition: all 0.3s;
+    &:hover {
+      background: #eb443f;
+      border-radius: 30px;
+      transform: scale(1.05);
+      box-shadow: 0 0 5px #ccc;
+    }
+  }
+}
+
+.header {
+  font-family: "Montserrat", sans-serif;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) -7.35%, #000915 100%),
+    url(mainbg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 1024px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heading {
+  &__top {
+    padding-top: 217px;
+    width: 789px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 78px;
+    display: flex;
+
+    color: #ffffff;
+  }
+  &__seasons {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 59px;
+    color: #ffffff;
+  }
+  &__word {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 59px;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+  }
+}
+
+.game {
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 32px;
+  }
+  &__item {
+    width: 379px;
+    height: 300px;
+    display: flex;
+    align-items: flex-end;
+  }
+}
+
+.game1 {
+  background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%),
+    url(game1.jpg);
+  border-radius: 16px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transition: all 0.3s;
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 5px #ccc;
+  }
+}
+
+.game2 {
+  background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%),
+    url(game2.jpg);
+  border-radius: 16px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transition: all 0.3s;
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 5px #ccc;
+  }
+}
+
+.game3 {
+  background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%),
+    url(game3.jpg);
+  border-radius: 16px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transition: all 0.3s;
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 5px #ccc;
+  }
+}
+
+.seasons {
+  margin-top: 179px;
+  &__content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+.content {
+  &__left {
+    width: 584px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+  &__right {
+    width: 485px;
+  }
+}
+
+.word {
+  margin-top: 239px;
+  margin-bottom: 239px;
+  &__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+@import "mobile";

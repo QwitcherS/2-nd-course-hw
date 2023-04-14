@@ -4,36 +4,15 @@
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) -7.35%, #000915 100%),
-    url(mainbg.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background: #000915;
 }
 
 .center {
-  padding-left: 120px;
-  padding-right: 120px;
+  padding-left: calc(50% - 700px);
+  padding-right: calc(50% - 700px);
 }
 
-.header {
-  height: 1024px;
-}
-
-.heading {
-  margin-top: 217px;
-  width: 789px;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 64px;
-  line-height: 78px;
-  display: flex;
-  align-items: center;
-  color: #ffffff;
-}
-
-.header__text {
+.text__header {
   margin-top: 32px;
   width: 481px;
   font-style: normal;
@@ -42,8 +21,35 @@ body {
   line-height: 32px;
   color: #ffffff;
 }
+.text__item {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #ffffff;
+  margin: 32px;
+}
+.text__seasons {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
+.text__word {
+  width: 588px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
 
-.header__btn {
+.btn__header {
   width: 234px;
   height: 48px;
   margin-top: 44px;
@@ -54,56 +60,227 @@ body {
   font-size: 18px;
   line-height: 22px;
   color: #ffffff;
+  transition: all 0.3s;
+}
+.btn__header:hover {
+  background: #eb443f;
+  border-radius: 30px;
+  transform: scale(1.05);
+  box-shadow: 0 0 5px #ccc;
+}
+.btn__seasons {
+  width: 234px;
+  height: 48px;
+  margin-top: 44px;
+  background: #9c0332;
+  border-radius: 30px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+  transition: all 0.3s;
+}
+.btn__seasons:hover {
+  background: #eb443f;
+  border-radius: 30px;
+  transform: scale(1.05);
+  box-shadow: 0 0 5px #ccc;
+}
+.btn__word {
+  width: 234px;
+  height: 48px;
+  margin-top: 44px;
+  background: #9c0332;
+  border-radius: 30px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+  transition: all 0.3s;
+}
+.btn__word:hover {
+  background: #eb443f;
+  border-radius: 30px;
+  transform: scale(1.05);
+  box-shadow: 0 0 5px #ccc;
 }
 
-.footer {
-  height: 556px;
-}
-
-.footer__content {
+.header {
+  font-family: "Montserrat", sans-serif;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) -7.35%, #000915 100%), url(mainbg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 1024px;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heading__top {
+  padding-top: 217px;
+  width: 789px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 78px;
+  display: flex;
+  color: #ffffff;
+}
+.heading__seasons {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 59px;
+  color: #ffffff;
+}
+.heading__word {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 59px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
+
+.game__content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
   gap: 32px;
 }
-
-.footer__item {
+.game__item {
   width: 379px;
   height: 300px;
   display: flex;
   align-items: flex-end;
-  padding: 32px;
-}
-
-.item__text {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 32px;
-  color: #ffffff;
 }
 
 .game1 {
-  background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%),
-    url(game1.jpg);
+  background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(game1.jpg);
   border-radius: 16px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  transition: all 0.3s;
+}
+.game1:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 5px #ccc;
 }
 
 .game2 {
-  background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%),
-    url(game2.jpg);
+  background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(game2.jpg);
   border-radius: 16px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  transition: all 0.3s;
+}
+.game2:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 5px #ccc;
 }
 
 .game3 {
-  background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%),
-    url(game3.jpg);
+  background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(game3.jpg);
   border-radius: 16px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  transition: all 0.3s;
 }
+.game3:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 5px #ccc;
+}
+
+.seasons {
+  margin-top: 179px;
+}
+.seasons__content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.content__left {
+  width: 584px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.content__right {
+  width: 485px;
+}
+
+.word {
+  margin-top: 239px;
+  margin-bottom: 239px;
+}
+.word__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@media (max-width: 375px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .heading__top {
+    width: 343px;
+    font-size: 32px;
+    line-height: 39px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  .heading__seasons {
+    font-size: 32px;
+    line-height: 39px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  .text__header {
+    width: 343px;
+    font-size: 14px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  .text__seasons {
+    font-size: 14px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  .text__item {
+    margin: 15px;
+  }
+  .game__item {
+    width: 343px;
+  }
+  .seasons__img {
+    margin-top: 64px;
+  }
+  .content__left {
+    align-items: center;
+  }
+}/*# sourceMappingURL=style.css.map */
