@@ -39,6 +39,16 @@ body {
     align-items: center;
     color: #ffffff;
   }
+  &__word {
+    width: 588px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+  }
 }
 
 .btn {
@@ -55,6 +65,8 @@ body {
     color: #ffffff;
     transition: all 0.3s;
     &:hover {
+      background: #eb443f;
+      border-radius: 30px;
       transform: scale(1.05);
       box-shadow: 0 0 5px #ccc;
     }
@@ -72,6 +84,27 @@ body {
     color: #ffffff;
     transition: all 0.3s;
     &:hover {
+      background: #eb443f;
+      border-radius: 30px;
+      transform: scale(1.05);
+      box-shadow: 0 0 5px #ccc;
+    }
+  }
+  &__word {
+    width: 234px;
+    height: 48px;
+    margin-top: 44px;
+    background: #9c0332;
+    border-radius: 30px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #ffffff;
+    transition: all 0.3s;
+    &:hover {
+      background: #eb443f;
+      border-radius: 30px;
       transform: scale(1.05);
       box-shadow: 0 0 5px #ccc;
     }
@@ -109,6 +142,15 @@ body {
     font-weight: 700;
     font-size: 48px;
     line-height: 59px;
+    color: #ffffff;
+  }
+  &__word {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 59px;
+    display: flex;
+    align-items: center;
     color: #ffffff;
   }
 }
@@ -191,6 +233,17 @@ body {
   }
   &__right {
     width: 485px;
+  }
+}
+
+.word {
+  margin-top: 239px;
+  margin-bottom: 239px;
+  &__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
   }
 }
 

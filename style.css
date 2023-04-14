@@ -38,6 +38,16 @@ body {
   align-items: center;
   color: #ffffff;
 }
+.text__word {
+  width: 588px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
 
 .btn__header {
   width: 234px;
@@ -53,6 +63,8 @@ body {
   transition: all 0.3s;
 }
 .btn__header:hover {
+  background: #eb443f;
+  border-radius: 30px;
   transform: scale(1.05);
   box-shadow: 0 0 5px #ccc;
 }
@@ -70,6 +82,27 @@ body {
   transition: all 0.3s;
 }
 .btn__seasons:hover {
+  background: #eb443f;
+  border-radius: 30px;
+  transform: scale(1.05);
+  box-shadow: 0 0 5px #ccc;
+}
+.btn__word {
+  width: 234px;
+  height: 48px;
+  margin-top: 44px;
+  background: #9c0332;
+  border-radius: 30px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+  transition: all 0.3s;
+}
+.btn__word:hover {
+  background: #eb443f;
+  border-radius: 30px;
   transform: scale(1.05);
   box-shadow: 0 0 5px #ccc;
 }
@@ -101,6 +134,15 @@ body {
   font-weight: 700;
   font-size: 48px;
   line-height: 59px;
+  color: #ffffff;
+}
+.heading__word {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 59px;
+  display: flex;
+  align-items: center;
   color: #ffffff;
 }
 
@@ -176,6 +218,17 @@ body {
 }
 .content__right {
   width: 485px;
+}
+
+.word {
+  margin-top: 239px;
+  margin-bottom: 239px;
+}
+.word__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
 
 @media (max-width: 375px) {
