@@ -4,12 +4,7 @@
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) -7.35%, #000915 100%),
-    url(mainbg.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background: #000915;
 }
 
 .center {
@@ -18,56 +13,64 @@ body {
 }
 
 .header {
+  font-family: "Montserrat", sans-serif;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) -7.35%, #000915 100%),
+    url(mainbg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   height: 1024px;
+  &__text {
+    margin-top: 32px;
+    width: 481px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 32px;
+    color: #ffffff;
+  }
+  &__btn {
+    width: 234px;
+    height: 48px;
+    margin-top: 44px;
+    background: #9c0332;
+    border-radius: 30px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #ffffff;
+  }
+  &__text {
+    width: 343px;
+  }
 }
 
 .heading {
-  margin-top: 217px;
+  padding-top: 217px;
   width: 789px;
   font-style: normal;
   font-weight: 700;
   font-size: 64px;
   line-height: 78px;
   display: flex;
-  align-items: center;
-  color: #ffffff;
-}
 
-.header__text {
-  margin-top: 32px;
-  width: 481px;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 32px;
-  color: #ffffff;
-}
-
-.header__btn {
-  width: 234px;
-  height: 48px;
-  margin-top: 44px;
-  background: #9c0332;
-  border-radius: 30px;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 22px;
   color: #ffffff;
 }
 
 .footer {
   height: 556px;
+
   &__content {
     display: flex;
     gap: 32px;
+    padding-bottom: 128px;
   }
   &__item {
     width: 379px;
     height: 300px;
     display: flex;
     align-items: flex-end;
-    padding: 32px;
   }
 }
 
@@ -77,6 +80,8 @@ body {
   font-size: 24px;
   line-height: 32px;
   color: #ffffff;
+
+  margin: 32px;
 }
 
 .game1 {
@@ -86,6 +91,11 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  transition: all 0.3s;
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 5px #ccc;
+  }
 }
 
 .game2 {
@@ -95,6 +105,11 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  transition: all 0.3s;
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 5px #ccc;
+  }
 }
 
 .game3 {
@@ -104,4 +119,11 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  transition: all 0.3s;
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 5px #ccc;
+  }
 }
+
+@import "mobile";
