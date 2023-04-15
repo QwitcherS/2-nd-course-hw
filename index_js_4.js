@@ -28,9 +28,9 @@ do {
 // Задание 4
 
 const obj = {
-  Коля: Number(200),
-  Вася: Number(300),
-  Петя: Number(400),
+  Коля: 200,
+  Вася: 300,
+  Петя: 400,
 };
 
 for (let name in obj) {
