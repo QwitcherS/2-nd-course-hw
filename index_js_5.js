@@ -93,12 +93,12 @@ cubing();
 // Задание 7;
 
 function getAria() {
-  let s = 3.14 * (this.radius ** 2);
+  let s = Math.PI * (this.radius ** 2);
   return s;
 }
 
 function getPerimeter() {
-  let p = this.radius * 3.14 * 2;
+  let p = this.radius * Math.PI * 2;
   return p;
 }
 
