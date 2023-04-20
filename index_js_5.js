@@ -1,18 +1,12 @@
 // Задание 1;
 
-let a;
-
-let b;
-
 function comparison(a, b) {
-  return a <= b ? console.log(a) : console.log(b);
+  return a <= b ? a : b;
 }
 
-comparison(20, 15);
+console.log(comparison(20, 15));
 
 // Задание 2;
-
-let c;
 
 function parity(c) {
   
@@ -67,7 +61,7 @@ let e;
 let f;
 
 function mult(e , f) {
-  if (isNaN(e) == true && isNaN == true) {
+  if (isNaN(e) && isNaN(f) ) {
     alert('Одно или оба значения не являются числом')
   } else {
     console.log(e * f);
@@ -85,7 +79,7 @@ mult(43 , 're');
 function cubing() {
   let firstNumber = prompt('Введите первое число');
 
-  (isNaN(firstNumber) == true) ? console.log('Переданный параметр не является числом') : console.log(`${firstNumber} в кубе равняется ${firstNumber ** 3}`);
+  console.log((isNaN(firstNumber)) ? console.log('Переданный параметр не является числом') : console.log(`${firstNumber} в кубе равняется ${firstNumber ** 3}`));
 }
 
 cubing();
