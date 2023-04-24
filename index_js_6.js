@@ -2,10 +2,14 @@
 
 const arrayFirst = [1, 5, 4, 10, 0, 3];
 
-for (let i = 0; i < arrayFirst.length; i++) {
-	if (arrayFirst[i] <= arrayFirst[4]) break;
-  console.log(arrayFirst[i])
-  }
+for (let i = 0; i <= arrayFirst.length - 1; i++) {
+	if (arrayFirst[i] == 10) {
+    console.log(arrayFirst[i]);
+    break;
+  } else {
+    console.log(arrayFirst[i]);
+  }  
+}
 
 // Задание 2;
 
@@ -20,15 +24,14 @@ console.log(arraySecond);
 
 // Задание 4;
 
-const arrayThird = [
-  [1, 1, 1], 
-  [1, 1, 1], 
-  [1, 1, 1],
-];
-
-for (let arrayOne of arrayThird) {
-  console.log(arrayOne);
+let arrs = [];
+for (let i = 0; i < 3; i++) {
+ arrs[i] = [];
+ for (let j = 0; j < 3; j++) {
+  arrs[i][j] = 1; 
+ }
 }
+console.log(arrs);
 
 // Задание 5;
 
