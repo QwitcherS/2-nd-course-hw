@@ -40,7 +40,6 @@ body {
     color: #ffffff;
   }
   &__word {
-    width: 588px;
     font-style: normal;
     font-weight: 300;
     font-size: 18px;
@@ -244,6 +243,16 @@ body {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
+  }
+  &__left {
+    width: 584px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+  &__right {
+    width: 485px;
   }
 }
 
